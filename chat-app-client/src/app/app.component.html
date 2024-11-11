@@ -1,0 +1,17 @@
+<label for="divMessages"></label>Chat ({{ userName }})
+<div id="divMessages" class="messages">
+  <ul>
+    <li *ngFor="let message of messages" class="message">{{ message }}</li>
+  </ul>
+</div>
+<div class="input-zone">
+  <label id="lblMessage" for="tbMessage">Message:</label>
+  <input
+    [(ngModel)]="messageInput"
+    (keyup.enter)="sendMessage()"
+    id="tbMessage"
+    class="input-zone-input"
+    type="text"
+  />
+  <button id="btnSend" (click)="sendMessage()">Send</button>
+</div>
