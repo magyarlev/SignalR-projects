@@ -17,7 +17,7 @@ export class AppComponent {
   messageInput: string = '';
   userName: string = this.getRandomUserName();
   connection = new signalR.HubConnectionBuilder()
-    .withUrl('http://localhost:5188/hub')
+    .withUrl('http://localhost:5251/hub')
     .build();
 
   ngOnInit() {
@@ -40,7 +40,12 @@ export class AppComponent {
   sendMessage() {
     this.connection
       .send('NewMessage', this.userName, this.messageInput)
-      .then(() => (this.messageInput = ''));
+      .then(() => {
+        this.messageInput = '';
+      })
+      .catch(() => {
+        console.log('msg error');
+      });
   }
 
   getRandomUserName() {
