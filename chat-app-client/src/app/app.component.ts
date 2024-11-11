@@ -42,6 +42,7 @@ export class AppComponent {
       .send('NewMessage', this.userName, this.messageInput)
       .then(() => (this.messageInput = ''));
   }
+
   getRandomUserName() {
     const rnd = Math.random();
     if (rnd < 0.3) {

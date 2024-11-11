@@ -1,6 +1,8 @@
 using SignalRWebpack.Hubs;
-var builder = WebApplication.CreateBuilder(args);
+
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
@@ -16,9 +18,11 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddSignalR();
 var app = builder.Build();
-
+app.UseCors(MyAllowSpecificOrigins);
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
+app.MapGet("/", () => "Hello World!");
 
 app.MapHub<ChatHub>("/hub");
 
