@@ -14,7 +14,7 @@ namespace TaskManagerApp.Hubs
 
     // a paraméterben átadott tasknak ad egy id-t, 
     //hozzáadja a Tasks Listhez 
-    //minden clientnek elküldi a "Task Created" üzenettel
+    //minden clientnek publishol a TaskCreated topicra
     public async Task CreateTask(TaskModel task)
     {
       task.Id = System.Guid.NewGuid().ToString();
