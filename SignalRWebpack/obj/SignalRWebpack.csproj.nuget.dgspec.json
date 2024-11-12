@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj": {}
+    "D:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj": {}
   },
   "projects": {
-    "d:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj": {
+    "D:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj",
+        "projectUniqueName": "D:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj",
         "projectName": "SignalRWebpack",
-        "projectPath": "d:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj",
+        "projectPath": "D:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\SignalRWebpack.csproj",
         "packagesPath": "C:\\Users\\magya\\.nuget\\packages\\",
-        "outputPath": "d:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\obj\\",
+        "outputPath": "D:\\DEV\\tutorials\\SignalR-projects\\SignalRWebpack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\magya\\AppData\\Roaming\\NuGet\\NuGet.Config"

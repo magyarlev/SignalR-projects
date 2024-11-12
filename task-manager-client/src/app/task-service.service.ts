@@ -19,11 +19,10 @@ export class TaskServiceService {
       .start()
       .then(() => {
         console.log('SignalR connection established');
-        this.getAllTasks();
       })
-      .catch((err) =>
-        console.error('Error establishing SignalR connection', err)
-      );
+      .catch((err) => {
+        console.error('Error establishing SignalR connection', err);
+      });
     this.connection.on('TaskCreated', (task: Task) => {
       this._taskSubject.next([...this._taskSubject.value, task]);
     });
