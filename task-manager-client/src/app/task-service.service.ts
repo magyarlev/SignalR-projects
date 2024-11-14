@@ -8,7 +8,7 @@ import * as signalR from '@microsoft/signalr';
 })
 export class TaskServiceService {
   connection = new signalR.HubConnectionBuilder()
-    .withUrl('http://localhost:5251/hub')
+    .withUrl('http://localhost:5152/hub')
     .build();
   private _taskSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>(
     []
