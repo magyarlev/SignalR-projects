@@ -1,0 +1,34 @@
+.form,
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin: 30px auto;
+  gap: 10px;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  .form-member-wrapper {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    text-align: left;
+  }
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  label {
+    align-self: center;
+  }
+  button {
+    grid-column: 1 / -1;
+  }
+}

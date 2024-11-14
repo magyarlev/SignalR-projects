@@ -1,1 +1,5 @@
-<p>task-list works!</p>
+<div class="wrapper">
+  @for (task of tasks$ | async; track task.Id) {
+  <app-task [task]="task" (delete)="taskService.deleteTask($event)"></app-task>
+  }
+</div>

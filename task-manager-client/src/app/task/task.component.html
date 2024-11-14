@@ -1,0 +1,30 @@
+<div class="form">
+  <div class="form-member-wrapper">
+    <label for="task-name">Name:</label>
+    <input type="text" id="task-name" [ngModel]="taskName" />
+  </div>
+  <div class="form-member-wrapper">
+    <label for="task-assigned">Assigned to:</label>
+    <input type="text" id="task-assigned" [ngModel]="taskAssignedTo" />
+  </div>
+  <button mat-raised-button color="primary" (click)="createTask()">
+    Create task
+  </button>
+</div>
+<div class="card">
+  <h3>Name:</h3>
+  <h3>{{ task.Name }}</h3>
+  <p>Id:</p>
+  <p>{{ task.Id }}</p>
+  <p>Assigned to:</p>
+  <p>{{ task.AssignedTo }}</p>
+  <label for="completed">Completed:</label>
+  <mat-checkbox
+    type="checkbox"
+    [checked]="task.Completed"
+    id="completed"
+    color="primary"
+    [ngModel]="task.Completed"
+  ></mat-checkbox>
+  <button mat-raised-button (click)="deleteTask()" color="warn">Delete</button>
+</div>
