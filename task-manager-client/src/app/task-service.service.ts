@@ -8,11 +8,11 @@ import * as signalR from '@microsoft/signalr';
 })
 export class TaskServiceService {
   connection = new signalR.HubConnectionBuilder()
-    .withUrl('http://localhost:5152/hub')
+    .withUrl('http://localhost:5152/taskHub')
     .build();
-  private _taskSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>(
-    []
-  );
+  private _taskSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>([
+    { AssignedTo: 'test', Completed: true, Id: 'dgfasd', Name: 'dfasdfas' },
+  ]);
   tasks$: Observable<Task[]> = this._taskSubject.asObservable();
   constructor() {
     this.connection
