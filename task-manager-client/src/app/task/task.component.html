@@ -19,12 +19,14 @@
   <p>Assigned to:</p>
   <p>{{ task.AssignedTo }}</p>
   <label for="completed">Completed:</label>
-  <mat-checkbox
-    type="checkbox"
-    [checked]="task.Completed"
-    id="completed"
-    color="primary"
-    [ngModel]="task.Completed"
-  ></mat-checkbox>
+  <div (click)="updateTask()">
+    <mat-checkbox
+      type="checkbox"
+      [checked]="task.Completed"
+      id="completed"
+      color="primary"
+      [ngModel]="task.Completed"
+    ></mat-checkbox>
+  </div>
   <button mat-raised-button (click)="deleteTask()" color="warn">Delete</button>
 </div>

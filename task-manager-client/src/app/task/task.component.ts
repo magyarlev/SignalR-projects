@@ -31,7 +31,7 @@ export class TaskComponent {
   }
 
   updateTask() {
-    this.update.emit();
+    this.update.emit(this.task);
   }
 
   taskName: Task['Name'] = '';
