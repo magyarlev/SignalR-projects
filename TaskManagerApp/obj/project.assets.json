@@ -2514,11 +2514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\TaskManagerApp.csproj",
+      "projectUniqueName": "d:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\TaskManagerApp.csproj",
       "projectName": "TaskManagerApp",
-      "projectPath": "D:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\TaskManagerApp.csproj",
+      "projectPath": "d:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\TaskManagerApp.csproj",
       "packagesPath": "C:\\Users\\magya\\.nuget\\packages\\",
-      "outputPath": "D:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\obj\\",
+      "outputPath": "d:\\DEV\\tutorials\\SignalR-projects\\TaskManagerApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\magya\\AppData\\Roaming\\NuGet\\NuGet.Config"

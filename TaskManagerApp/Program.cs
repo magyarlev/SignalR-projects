@@ -1,3 +1,5 @@
+using TaskManagerApp.Hubs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
